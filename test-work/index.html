@@ -5,9 +5,42 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Test work</title>
   <link rel="stylesheet" href="scss/index.scss">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+  <div class="container">
+    <div class="content">
+        <h2 class="content__title">Демо-версия</h2>
+        <p class="content__text">За 18 лет деятельности было реализовано более 500 крупных, а так же, не менее 2500 средних и малых проектов. Используя знания и накопленный опыт мы можем предложить</p>
+        <div class="content__button">
+          <button class="content__button" id="try-demo">
+            <p>Попробовать бесплатно</p>
+            <i class="fa-solid fa-up-right-from-square"></i>
+          </button>
+        </div>
+    </div>
+    <div class="image-container">
+        <img src="image/image_content.png" alt="Демо изображение" class="image-container__image">
+    </div>
+</div>
 
+<div id="login-modal" class="modal">
+    <div class="modal__content">
+        <span class="modal__close-button">&times;</span>
+        <form class="login-form">
+            <label class="login-form__label" for="email">Войти в систему</label>
+            <input class="login-form__input" type="email" id="email" placeholder="Email/Телефон" required>
+            <input class="login-form__input" type="password" id="password" placeholder="Пароль" required>
+            <div class="login-form__checkbox-container">
+                <input class="login-form__checkbox" type="checkbox" id="remember-me">
+                <label class="login-form__checkbox-label" for="remember-me">Запомнить пароль</label>
+            </div>
+            <a class="login-form__link" href="#" id="forgot-password">Восстановить</a>
+            <button class="login-form__button" type="submit">Войти</button>
+            <button class="login-form__button" type="button" id="register">Зарегистрироваться</button>
+        </form>
+    </div>
+</div>
 
   <script src="js/index.js"></script>
 </body>
