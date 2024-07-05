@@ -6,6 +6,8 @@
     <title>LevelUp</title>
     <link rel="stylesheet" href="css/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/>
 </head>
 <body>
     <!-- 1 Блок. Промо -->
@@ -36,7 +38,7 @@
     <h2 class="section-title">Состав продукта</h2>
     <div class="product-details">
       <div class="ingredients-column">
-        <div class="ingredient">
+        <div class="ingredient" id="ingredient1">
           <div class="ingredient-icon">
             <img src="./image/ingredient-1.png" alt="Ingredient 1">
           </div>
@@ -44,7 +46,7 @@
             <h3>Экстракт женьшеня</h3>
           </div>
         </div>
-        <div class="ingredient">
+        <div class="ingredient" id="ingredient2">
           <div class="ingredient-icon">
             <img src="./image/ingredient-2.png" alt="Ingredient 2">
           </div>
@@ -52,7 +54,7 @@
             <h3>Мак</h3>
           </div>
         </div>
-        <div class="ingredient">
+        <div class="ingredient" id="ingredient3">
           <div class="ingredient-icon">
             <img src="./image/ingredient-3.png" alt="Ingredient 3">
           </div>
@@ -65,7 +67,7 @@
         <img src="./image/prod.png" alt="Product Photo">
       </div>
       <div class="ingredients-column">
-        <div class="ingredient">
+        <div class="ingredient" id="ingredient4">
           <div class="ingredient-icon">
             <img src="./image/ingredient-4.png" alt="Ingredient 4">
           </div>
@@ -73,7 +75,7 @@
             <h3>Л-аргинин</h3>
           </div>
         </div>
-        <div class="ingredient">
+        <div class="ingredient" id="ingredient5">
           <div class="ingredient-icon">
             <img src="./image/ingredient-5.png" alt="Ingredient 5">
           </div>
@@ -81,7 +83,7 @@
             <h3>Цинк</h3>
           </div>
         </div>
-        <div class="ingredient">
+        <div class="ingredient" id="ingredient6">
           <div class="ingredient-icon">
             <img src="./image/ingredient-6.png" alt="Ingredient 6">
           </div>
@@ -94,6 +96,81 @@
     <a href="#order-form" class="scroll-btn">Заказать</a>
   </div>
 </section>
+
+ <!-- 3 Блок. Отзывы -->
+ <section id="reviews">
+  <div class="container">
+      <h2 class="section-title">Отзывы</h2>
+      <div class="reviews-carousel">
+          <div class="review-item">
+              <img src="./image/review-1.png" alt="Отзыв 1">
+              <h3>Геннадий</h3>
+              <p>LevelUp действительно работает! Уже через неделю я заметил значительное улучшение в своей выносливости и уверенности. Теперь я чувствую себя намного лучше и энергичнее. Спасибо LevelUp за это чудо-продукт!</p>
+          </div>
+          <div class="review-item">
+              <img src="./image/review-2.png" alt="Отзыв 2">
+              <h3>Александр</h3>
+              <p>Этот продукт превзошел все мои ожидания. После приема LevelUp я почувствовал заметное улучшение кровообращения и общего самочувствия. Жена тоже заметила изменения, так что рекомендую!</p>
+          </div>
+          <div class="review-item">
+              <img src="./image/review-3.png" alt="Отзыв 3">
+              <h3>Владислав</h3>
+              <p>Долго искал средство, которое действительно помогает, и наконец нашел! LevelUp помог мне вернуть уверенность и повысить либидо. Эффект заметен практически сразу.</p>
+          </div>
+          <div class="review-item">
+            <img src="./image/review-4.png" alt="Отзыв 1">
+            <h3>Дмитрий</h3>
+            <p>LevelUp – это не просто слова на бумаге. Я чувствую реальное улучшение своей физической формы и уверенности. Очень рад, что нашел этот продукт. Теперь я готов к любым вызовам!</p>
+          </div>
+          <div class="review-item">
+            <img src="./image/review-5.png" alt="Отзыв 1">
+            <h3>Евгений</h3>
+            <p>У меня были сомнения по поводу использования подобных средств, но LevelUp развеял их все. Улучшение выносливости и потенции стало заметно после первого курса. Очень рекомендую всем мужчинам!</p>
+          </div>
+          <div class="review-item">
+            <img src="./image/review-6.png" alt="Отзыв 1">
+            <h3>Никита</h3>
+            <p>Превосходный продукт! После начала приема LevelUp я чувствую себя намного энергичнее и увереннее в себе. Эффект длится долго, и я безумно доволен результатом.</p>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- 4 Блок. Промо с человеком -->
+<section id="promo2">
+  <div class="container">
+    <div class="promo-content">
+      <div class="promo-image">
+        <img src="./image/person-with-product.png" alt="Человек с продуктом">
+      </div>
+      <div class="promo-description">
+        <p>LevelUp - ваш лучший помощник для достижения максимальных результатов. Увеличьте свою выносливость и силу с помощью нашего уникального продукта.</p>
+        <ul class="product-features">
+          <li>Увеличение энергии</li>
+          <li>Быстрое восстановление</li>
+          <li>Повышение силы</li>
+        </ul>
+        <a href="#order-form" class="scroll-btn">Заказать</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+<script>
+  $(document).ready(function(){
+      $('.reviews-carousel').slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 3,
+          adaptiveHeight: true,
+          autoplay: true,
+          autoplaySpeed: 2000,
+      });
+  });
+</script>
 </body>
 </html>
 
