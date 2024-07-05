@@ -238,3 +238,64 @@ body, html {
   justify-content: center;
   align-items: center;
 }
+
+/* Стили для 4-го блока */
+#promo4 {
+  background: radial-gradient(40% 50%, #44006e83, #f3e2fdc1); /* Градиент */
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#promo4 .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#promo4 .left-side,
+#promo4 .right-side {
+  width: 40%;
+}
+
+#promo4 .left-side  {
+  text-align: center;
+}
+
+#promo4 .left-side img {
+  border-radius: 10px;
+}
+
+#promo4 .right-side {
+  text-align: left;
+  margin: auto;
+  background-color: rgba(243, 226, 253, 0.507); /* Полупрозрачный фон */
+  padding: 20px;
+  color: #333333;
+  border: #44006e83 1px solid;
+  border-radius: 10px;
+}
+
+#promo4 .description {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#promo4 .product-features {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+#promo4 .product-features li {
+  font-size: 1.2em;
+  margin: 0 20px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.547); /* Полупрозрачный фон для списка */
+  color: #333333;
+  border: #44006e83 1px solid;
+  border-radius: 10px;
+}
+
