@@ -1,0 +1,48 @@
+#promo4 {
+  background: radial-gradient(40% 50%, #44006e83, #f3e2fdc1); /* Градиент */
+  color: white;
+  text-align: center;
+}
+
+#promo4 .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#promo4 .left-side,
+#promo4 .right-side {
+  width: 40%;
+}
+
+#promo4 .right-side {
+  text-align: left;
+  margin: auto;
+  background-color: rgba(243, 226, 253, 0.507);
+  padding: 20px;
+  color: #333333;
+  border: #44006e83 1px solid;
+  border-radius: 10px;
+}
+
+#promo4 .description {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+#promo4 .product-features {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+#promo4 .product-features li {
+  font-size: 1.2em;
+  margin: 0 20px;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.547);
+  color: #333333;
+  border: #44006e83 1px solid;
+  border-radius: 10px;
+}

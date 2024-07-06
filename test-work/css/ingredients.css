@@ -1,0 +1,55 @@
+#product-ingredients {
+  background: radial-gradient(40% 50%, #44006e83, #f3e2fdc1); /* Градиент */
+  color: #333333;
+  text-align: center;
+}
+
+.product-details {
+  margin: auto;
+  gap: 20px;
+}
+
+.ingredients-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  width: 30%;
+}
+
+.ingredient:last-child {
+  margin-bottom: 0;
+}
+
+.ingredient-icon {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.ingredient-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.product-photo {
+  margin: auto;
+}
+
+.product-details {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+
+.ingredient-details h3 {
+  font-size: 1.1em;
+}
+
