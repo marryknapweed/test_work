@@ -25,7 +25,7 @@
   font-size: 1.5em;
   font-weight: bold;
   color: #ff5722;
-  animation: priceAnimation 1.5s infinite alternate;
+  animation: priceAnimation 1s infinite alternate;
 }
 
 @keyframes priceAnimation {
@@ -61,16 +61,6 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  animation: countdownAnimation 36000s linear infinite; /* 10 часов (36000 секунд) */
-}
-
-@keyframes countdownAnimation {
-  from {
-    width: 100%;
-  }
-  to {
-    width: 0%;
-  }
 }
 
 .order-form {
@@ -128,7 +118,6 @@ input[type="tel"] {
   background-color: #bc3309;
   transform: translateY(-5px);
 }
-
 
 @media (max-width: 1024px) {
   #order-form .product-details {

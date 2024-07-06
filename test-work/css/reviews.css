@@ -55,7 +55,6 @@
   border: none;
 }
 
-/* Адаптивность */
 @media (max-width: 1024px) {
   .review-item {
     flex: 0 0 calc(100% / 2 - 20px); /* Две карточки в ряд */

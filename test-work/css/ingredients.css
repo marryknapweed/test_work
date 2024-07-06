@@ -53,37 +53,34 @@
   font-size: 1.1em;
 }
 
-
-/* Media Queries for Responsive Design */
-
 @media (max-width: 1024px) {
   .ingredients-column {
-      width: 45%;
-      margin-bottom: 40px;
+    width: 45%;
+    margin-bottom: 40px;
   }
-  .product-photo {
-      width: 100%;
-      /* margin-bottom: 40px; */
 
+  .product-photo {
+    width: 100%;
   }
 }
 
 @media (max-width: 768px) {
   .product-details {
-      flex-direction: column;
-      align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
+
   .ingredients-column {
-      width: 100%;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: flex-start; /* Выровнять элементы по верху */
-      margin-bottom: 0;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin-bottom: 0;
   }
+
   .ingredient {
-      width: 30%;
-      align-items: flex-start; /* Выровнять элементы по верху */
-      /* margin-bottom: 30px; */
+    width: 30%;
+    align-items: flex-start;
   }
 
   .product-photo img {
@@ -92,30 +89,26 @@
 }
 
 @media (max-width: 480px) {
-
   .section-title {
     font-size: 0.8em;
   }
 
   .ingredients-column {
     flex-direction: row;
-    /* justify-content: space-around; */
-    /* align-items: center; */
-    gap: 20px; /* Устанавливаем промежуток между элементами */
+    gap: 20px;
   }
 
   .ingredient {
-    width: 45%; /* Ширина элемента для 480px экрана */
-    /* margin-bottom: 0; Убираем отступ снизу */
+    width: 45%;
   }
 
   .ingredient-icon {
-    width: 60px; /* Уменьшаем размер иконок для компактного отображения */
+    width: 60px;
     height: 60px;
   }
 
   .ingredient-details h3 {
-    font-size: 0.9em; /* Уменьшаем размер заголовка */
+    font-size: 0.9em;
   }
 }
 
@@ -128,10 +121,12 @@
     width: 100%;
     margin-bottom: 20px;
   }
+
   .ingredient-icon {
     width: 50px;
     height: 50px;
   }
+
   .ingredient-details h3 {
     font-size: 0.8em;
   }
