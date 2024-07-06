@@ -22,3 +22,38 @@ $(document).ready(function() {
     this.value = this.value.replace(/[^0-9]/g, '');
   });
 });
+
+
+$(document).ready(function() {
+  const $carousel = $('.carousel-inner');
+  const $items = $('.review-item');
+  const itemCount = $items.length;
+  let itemWidth = $items.outerWidth(true);
+  let currentIndex = 0;
+
+  $(window).resize(function() {
+    itemWidth = $items.outerWidth(true);
+  });
+
+  function moveCarousel() {
+    $carousel.css('transform', `translateX(-${currentIndex * itemWidth}px)`);
+  }
+
+  $('.next-btn').click(function() {
+    if (currentIndex < itemCount - 1) {
+      currentIndex++;
+    } else {
+      currentIndex = 0;
+    }
+    moveCarousel();
+  });
+
+  $('.prev-btn').click(function() {
+    if (currentIndex > 0) {
+      currentIndex--;
+    } else {
+      currentIndex = itemCount - 1;
+    }
+    moveCarousel();
+  });
+});

@@ -104,17 +104,16 @@
     gap: 20px; /* Устанавливаем промежуток между элементами */
   }
 
-  .product-photo img {
-
-  }
   .ingredient {
     width: 45%; /* Ширина элемента для 480px экрана */
     /* margin-bottom: 0; Убираем отступ снизу */
   }
+
   .ingredient-icon {
     width: 60px; /* Уменьшаем размер иконок для компактного отображения */
     height: 60px;
   }
+
   .ingredient-details h3 {
     font-size: 0.9em; /* Уменьшаем размер заголовка */
   }

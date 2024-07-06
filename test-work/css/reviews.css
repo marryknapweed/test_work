@@ -1,10 +1,23 @@
 #reviews {
   text-align: center;
-  background: radial-gradient(40% 50%,#f3e2fdc1, #44006e83); /* Градиент */
+  background: radial-gradient(40% 50%, #f3e2fdc1, #44006e83); /* Градиент */
+  padding: 20px 0;
+}
+
+.reviews-carousel {
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
 }
 
 .review-item {
   text-align: left;
+  flex: 0 0 calc(100% / 3 - 20px); /* Устанавливаем ширину каждой карточки с учетом промежутка */
   margin: 0 10px;
   padding: 20px;
   border-radius: 10px;
@@ -28,4 +41,41 @@
   font-size: 1em;
   color: #555;
   line-height: 1.4;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controls button {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Адаптивность */
+@media (max-width: 1024px) {
+  .review-item {
+    flex: 0 0 calc(100% / 2 - 20px); /* Две карточки в ряд */
+  }
+}
+
+@media (max-width: 768px) {
+  .review-item {
+    flex: 0 0 calc(100% / 1 - 20px); /* Одна карточка в ряд */
+  }
+}
+
+@media (max-width: 480px) {
+  .review-item {
+    flex: 0 0 calc(100% - 20px);
+  }
+}
+
+@media (max-width: 320px) {
+  .review-item {
+    flex: 0 0 calc(100% - 10px);
+  }
 }
