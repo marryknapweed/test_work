@@ -110,12 +110,12 @@ input[type="tel"] {
 }
 
 .product-photo {
-  flex: 1 1 300px;
+  /* flex: 1 1 300px; */
   max-width: 300px;
 }
 
 .product-photo img {
-  width: 100%;
+  /* width: 100%; */
   height: auto;
 }
 
